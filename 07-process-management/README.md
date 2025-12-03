@@ -153,6 +153,14 @@ List all system daemons:
 ```bash
 systemctl list-units --type=service
 ```
+To show all installed unit files use:
+```bash
+systemctl list-unit-files
+```
+to see loaded but inactive units, too.:
+```bash
+systemctl list-units --type=service --all
+```
 Start a daemon:
 ```bash
 systemctl start service-name
